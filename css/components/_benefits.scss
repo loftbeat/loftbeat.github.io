@@ -1,0 +1,40 @@
+.benefits{
+    display: flex;
+}
+
+.benefits__item{
+    flex: 1;
+    padding: 0 2.7%;
+    position: relative;
+
+    &::after{
+        content: url("../img/decor/separator.png");
+        position: absolute;
+        top: 70px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    &:last-child{
+        padding-right: 0;
+
+        &::before{
+            display: none;
+        }
+    }
+}
+
+.benefits-section{
+    position: relative;
+
+    &::before{
+        content: url("../img/decor/vector.png");
+        position: absolute;
+        bottom: -14px;
+        left: 75px;
+    }
+}
